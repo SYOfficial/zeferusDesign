@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+/*Zijun (Stephen) Yan       Student Number: A01031604*/
+
+>>>>>>> 1c1cf878d859636b029db74c837cee58b17686d9
 * {
     margin:0;
     padding:0;
@@ -36,6 +41,18 @@ url("../css/fonts/Nexa Bold.otf") format("opentype"),
 url("../css/fonts/nexa_bold-webfont.svg#filename") format("svg");
 }
 
+<<<<<<< HEAD
+=======
+#submitsuccess {
+    font-family: "Nexa Light";
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    margin-top:20%;
+    font-size:35px;
+}
+
+>>>>>>> 1c1cf878d859636b029db74c837cee58b17686d9
 #resourcetitle {
     position:fixed;
     font-family: "Nexa Bold";
