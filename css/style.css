@@ -1,0 +1,886 @@
+/*Zijun (Stephen) Yan       Student Number: A01031604*/
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@font-face {
+font-family: "Nexa Light";
+src: url("../css/fonts/nexa_light-webfont.eot");
+src: 
+url("../css/fonts/nexa_light-webfont.woff") format("woff"),
+url("../css/fonts/Nexa Light.otf") format("opentype"),
+url("../css/fonts/nexa_light-webfont.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    src: url("../css/fonts/DroidSerif-Bold.ttf");
+}
+@media only screen and (max-width:420px) {
+  /* For mobile phones: */
+  #aboutmetitle {
+    visibility: hidden;
+  }
+}
+@font-face {
+font-family: "Nexa Bold";
+src: url("../css/fonts/nexa_bold-webfont.eot");
+src: 
+url("../css/fonts/nexa_bold-webfont.woff") format("woff"),
+url("../css/fonts/Nexa Bold.otf") format("opentype"),
+url("../css/fonts/nexa_bold-webfont.svg#filename") format("svg");
+}
+
+#submitsuccess {
+    font-family: "Nexa Light";
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    margin-top:20%;
+    font-size:35px;
+}
+
+#resourcetitle {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:55px;
+    top:150px;
+    left:40%;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+}
+
+#resourcedesc {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:28px;
+    font-weight:bold;
+    top:250px;
+    left:20%;
+    text-align:center;
+    margin:auto;
+}
+
+#dribbble {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:20px;
+    font-weight:bold;
+    top:300px;
+    left:20%;
+    text-align:center;
+    margin:auto;
+}
+
+#resourcedesc2 {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:28px;
+    font-weight:bold;
+    top:250px;
+    left:70%;
+    text-align:center;
+    margin:auto;
+}
+
+#udemy {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:20px;
+    font-weight:bold;
+    top:300px;
+    left:70%;
+    text-align:center;
+    margin:auto;
+}
+
+.abouts {
+    text-align: center;
+    display:inline-block;
+    border-color: black;
+    padding: 5px;
+    border-left-width: 35px;
+    border-right-width: 35px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    z-index: -100;
+}
+#aboutmetitle {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:55px;
+    top:150px;
+    left:28%;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+}
+
+#titledesc {
+    position:static;
+    font-family: "Nexa Bold";
+    font-size:35px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+}
+
+#titledesc2 {
+    position:static;
+    font-family: "Nexa Bold";
+    font-size:35px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+}
+
+#aboutmedesc {
+    position:static;
+    font-family: "Nexa Light";
+    font-size:20px;
+    font-weight:bold;
+    margin-right:2%;
+    margin-left:2%;
+    text-align:center;
+    z-index: 100;
+}
+
+#aboutmedesc2 {
+    position:static;
+    font-family: "Nexa Light";
+    font-size:20px;
+    font-weight:bold;
+    margin-right:2%;
+    margin-left:2%;
+    text-align:center;
+}
+
+
+#designing {
+    color:white;
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:55px;
+    top:165px;
+    left:19.5%;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    -webkit-text-stroke: 1px black;
+   text-shadow:
+       1px 1px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+#new1:hover, #new2:hover, #new3:hover, #new4:hover, #new5:hover, #new6:hover {
+    color:blue;
+}
+
+#aboutzeferus {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:55px;
+    top:165px;
+    left:40%;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+}
+
+#aboutdesc {
+    position:fixed;
+    font-family: "Nexa Light";
+    font-size:20px;
+    top:280px;
+    left:40px;
+    font-weight:bold;
+    margin-right:50px;
+    text-align:center;
+}
+#popup1 {
+    position:fixed;
+    font-family: "Nexa Light";
+    font-size:20px;
+    top:280px;
+    left:0px;
+    font-weight:bold;
+    padding:10px;
+    background-color:black;
+    margin-right:50px;
+    text-align:center;
+    color:white;
+}
+#sitebg {
+    position:fixed;
+    background-color:black;
+    width:1536px;
+    height:1100px;
+}
+
+.homemap {
+    font-family: "Nexa Bold";
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    color:#000000;
+    display:block;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.aboutmap {
+    font-family: "Nexa Bold";
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    color:#000000;
+    display:block;
+    margin-bottom:50px;
+}
+a {
+    text-decoration-color: #AFAFAF;
+    color: #5F5F5F
+}
+.portfoliomap {
+    font-family: "Nexa Bold";
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    color:#000000;
+    display:block;
+    margin-bottom:50px;
+}
+
+.pricingmap {
+    font-family: "Nexa Bold";
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    color:#000000;
+    display:block;
+    margin-bottom:50px;
+}
+
+.contactmap {
+    font-family: "Nexa Bold";
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    color:#000000;
+    display:block;
+    margin-bottom:50px;
+}
+
+.resourcesmap {
+    font-family: "Nexa Bold";
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    color:#000000;
+    display:block;
+}
+textarea {
+    font-size: 118%;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    resize: none;
+    font-family: Nexa Light;
+    font-weight:900;
+    -webkit-appearance:none;
+    outline: 0px;
+    padding-left:2px;
+    background-color: #AFAFAF;
+}
+textarea:focus {
+    color: #EFEFEF;
+    transition:0.5s;
+    background-color: #3b3b3b;
+    font-weight: bold;
+}
+.ta {
+    height:1.3em;
+}
+ul {
+    list-style-type:none;
+}
+li {
+    padding-bottom: 20px;
+}
+#contactbutton{
+    color:white;
+    cursor: pointer;
+    font-family: "Nexa Light";
+    font-size:14px;
+    font-weight:bold;
+    border-color:white;
+    border-style:solid;
+    border-width:3px;
+    padding:2px;
+    width: 65px;
+    background-color:#000000;
+    margin-left:10px;
+    margin-right:10px;
+}
+#contactbutton:hover{
+    transition:0.4s;
+    background-color:black;
+    color:white;
+    border-color: #000000;
+}
+.label {
+    color: black;
+    font-family: Nexa Bold;
+}
+.req::after {
+    content: "*";
+    color: 
+}
+
+.port {
+    width:350px;
+    height:auto;
+    margin:auto;
+    text-align:center;
+    display:block;
+    margin-bottom:10px;
+}
+.port:hover{
+    transition: 0.2s;
+    border-style: solid;
+    border-width:3px;
+    border-color:#3b3b3b;
+}
+#sitemaptitle {
+    font-family: "Nexa Bold";
+    font-size:40px;
+    top:150px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    color:#000000;
+}
+
+#portfolio {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:60px;
+    top:150px;
+    left:38.5%;
+    font-weight:bold;
+    text-align:center;
+    color: black;
+    margin: auto;
+}
+
+#example {
+    position:fixed;
+    font-family: "Nexa Light";
+    font-size:18px;
+    top:250px;
+    left:38.5%;
+    font-weight:bold;
+    text-align:center;
+    color: black;
+    margin: auto;
+}
+span {
+    font-size: 85%;
+}
+th, td{
+    padding:20px;
+}
+.basic {
+    background-color: #FFFFCF;
+}
+.standard {
+    background-color: #D2FFD2;
+}
+.premium {
+    background-color: #FFCFFF;
+}
+.pro {
+    background-color: #FFCFCF;
+}
+table, th, td {
+    border: 2px solid black;
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    margin:auto;
+    text-align:center;
+}
+table {
+    border-collapse: collapse;
+}
+.no {
+    background-color: #FFAFAF;
+}
+.yellow {
+    background-color: #FFFF5F;
+}
+.yes {
+    background-color: #AFFFAF;
+}
+.pop1 {
+    font-size:25px;
+    font-family: Nexa Bold;
+}
+#contacttitle {
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:50px;
+    top:150px;
+    left:37%;
+    font-weight:bold;
+    text-align:center;
+    color: black;
+    margin: auto;
+}
+#contacttitle:hover {}
+#contactdesc {
+    position:fixed;
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:18px;
+    top:240px;
+    left:18%;
+    font-weight:bold;
+    text-align:center;
+}
+.hover {
+    opacity: 0
+}
+#contactstatus {
+    position:fixed;
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:18px;
+    top:290px;
+    left:540px;
+    font-weight:bold;
+    text-align:center;
+    color:green;
+}
+
+#contactform {
+    margin:auto;
+    text-align:center;
+    padding: 5px;
+
+}
+.pics {
+    width: 100%;
+    height: 1013.33px;
+    background-size: 100%;
+    background-image: url(../imgs/gd.jpg);
+    background-repeat: no-repeat;
+    filter: brightness(110%);
+}
+#individual {
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:35px;
+    margin:auto;
+    text-align:center;
+}
+
+#onetime {
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:18px;
+    margin:auto;
+    text-align:center;
+}
+
+#note {
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:15px;
+    margin:auto;
+    text-align:center;
+    font-weight:bold;
+}
+
+#pricingtitle{
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:60px;
+    top:100px;
+    left:650px;
+    font-weight:bold;
+    text-align: center;
+    margin: 0px;
+}
+
+#pricingdesc{
+    position:fixed;
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:15px;
+    top:220px;
+    left:300px;
+    font-weight:bold;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+a:hover{
+    color:#adadad;
+    transition:0.8s;
+}
+
+#citylights{
+    background-size:auto;
+    opacity:1;
+    width:1520px;
+}
+
+#quality{
+    position:fixed;
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:80px;
+    top:150px;
+    left:140px;
+    font-weight:bold;
+}
+
+#quick{
+    position:fixed;
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:80px;
+    top:245px;
+    left:280px;
+    font-weight:bold;
+}
+
+#qualified{
+    position:fixed;
+    font-family: "Nexa Light", Arial, sans-serif;
+    font-size:80px;
+    top:335px;
+    left:380px;
+    font-weight:bold;
+}
+
+#viewportfolio{
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:24px;
+    top:370px;
+    left:550px;
+    font-weight:bold;
+    border-style:solid;
+    border-width:2px;
+    padding:7px;
+}
+#viewportfolio:hover{
+    transition:0.8s;
+    background-color: #000000;
+    color:white;
+    border-color: #000000;
+}
+
+#buy:hover{
+    transition:0.8s;
+    background-color: #000000;
+    color:white;
+    border-color: #000000;
+}
+
+#buy{
+    position:fixed;
+    font-family: "Nexa Bold";
+    font-size:24px;
+    top:370px;
+    left:800px;
+    font-weight:bold;
+    border-style:solid;
+    border-width:2px;
+    padding:7px;
+}
+
+#menu {
+    position:fixed;
+    margin:0;
+    top:0;
+    width:100%;
+    height:100px;
+    background-color:#ffffff;
+    opacity:0.8;
+}
+
+#leftbar {
+    position:fixed;
+    margin:0;
+    left:0px;
+    top:100px;
+    width:35px;
+    height:100%;
+    background-color:black;
+}
+
+#rightbar {
+    position:fixed;
+    margin:0;
+    right:0px;
+    top:0px;
+    width:35px;
+    height:100%;
+    background-color:black;
+}
+
+#zeferuslogo {
+    position:fixed;
+    top:26px;
+    left:15px;
+    height:auto;
+    width:80px;
+    z-index:99;
+}
+
+.home {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:600px;
+    display:inline;
+    font-weight:bold;
+}
+.down {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:600px;
+    display:inline;
+    font-weight:bold;
+}
+.homein {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:600px;
+    display:inline;
+    font-weight:bold;
+    -webkit-text-stroke: black 1px;
+}
+
+.about {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:520px;
+    display:inline;
+    font-weight:bold;
+}
+
+.aboutin {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:520px;
+    display:inline;
+    font-weight:bold;
+    -webkit-text-stroke: black 1px;
+}
+
+.portfolio {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:430px;
+    display:inline;
+    font-weight:bold;
+}
+
+.portfolioin {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:430px;
+    display:inline;
+    font-weight:bold;
+    -webkit-text-stroke: black 1px;
+}
+
+.pricing {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:360px;
+    display:inline;
+    font-weight:bold;
+}
+
+.pricingin {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:360px;
+    display:inline;
+    font-weight:bold;
+    -webkit-text-stroke: black 1px;
+}
+
+.contact {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:275px;
+    display:inline;
+    font-weight:bold;
+}
+
+.contactin {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:275px;
+    display:inline;
+    font-weight:bold;
+    -webkit-text-stroke: black 1px;
+}
+
+.resources {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:170px;
+    display:inline;
+    font-weight:bold;
+}
+
+.resourcesin {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:170px;
+    display:inline;
+    font-weight:bold;
+    -webkit-text-stroke: black 1px;
+}
+
+.sitemap {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:80px;
+    display:inline;
+    font-weight:bold;
+}
+
+.sitemapin {
+    position:fixed;
+    text-decoration:none;
+    font-family: "Nexa Light", Arial, sans-serif;
+    color:black;
+    z-index:100;
+    top:40px;
+    right:80px;
+    display:inline;
+    font-weight:bold;
+    -webkit-text-stroke: black 1px;
+}
+
+.buttons {
+    color:black;
+}
+.buton {
+    color:white;
+    cursor: pointer;
+    font-size: 17px;
+    width: 50px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 4px;
+    background-color: black;
+}
+.ye {
+    color:white;
+    cursor: pointer;
+    font-size: 17px;
+    width: 50px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 4px;
+    background-color: #004400;
+}
+.buton:hover {
+    background-color: #440000;
+}
+.ye:hover {
+    background-color: #006200;
+}
+#popupcont {
+    color:white;
+    cursor: pointer;
+    font-size: 17px;
+    width: 200px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 4px;
+    background-color: #000044;
+    font-family: "Nexa Bold";
+}
+#popupcont:hover {
+    background-color: #000062;
+}

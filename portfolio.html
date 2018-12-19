@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Zijun (Stephen) Yan       Student Number: A01031604-->
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="lightbox2-master/lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            function start() {
+                AOS.init();
+            }
+        </script>
+        <script>
+        window.addEventListener('scroll', function() {
+    if(window.scrollY > 793) {
+        $("#portfolio").css("position", "static");
+        $("#example").css("position", "static");
+    }
+            if(window.scrollY < 793) {
+        $("#portfolio").css("position", "fixed");
+        $("#example").css("position", "fixed");
+    }
+});
+        </script>
+    </head>
+    <body onload="start()">
+        <div id="image">
+            <a class="nav_links" href="./index.html"><img id="zeferuslogo" src="imgs/zlogo2.png" /></a>
+        </div>
+        <div class="pics">
+        </div>
+        <div id="container">
+            <div id="nav">
+                <a class="home" href="./index.html">Home</a>
+                <br />
+                <a class="about" href="./about.html">About</a>
+                <br />
+                <a class="portfolioin" href="./portfolio.html">Portfolio</a>
+                <br />
+                <a class="pricing" href="./pricing.html">Pricing</a>
+                <br />
+                <a class="contact" href="./contact.html">Contact</a>
+                <br />
+                <a class="resources" href="./resources.html">Resources</a>
+                <br />
+                <a class="sitemap" href="./sitemap.html">Sitemap</a>
+            </div>
+                <div id="menu"></div>
+                    <div id="leftbar"></div>
+                        <div id="rightbar"></div>
+                                <h1 id="portfolio" >PORTFOLIO</h1>
+                            <p id="example">Examples of works I have done in the past.</p>  
+<a href="imgs/DetectiveDownUnder.png" data-lightbox="portfoliopics" data-title="Twitch Avatar"><img data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="port" src="imgs/DetectiveDownUnder.png" /></a>
+            
+<a href="imgs/RLogo.png" data-lightbox="portfoliopics" data-title="R Logo Exploration"><img data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="port" src="imgs/RLogo.png" /></a>
+<a href="imgs/seriflogov2.png" data-lightbox="portfoliopics" data-title="Serif Logo Concept"><img data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="port" src="imgs/seriflogov2.png" /></a>
+<a href="imgs/zlogoyellow.png" data-lightbox="portfoliopics" data-title="Zeferus Logo"><img data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="port" src="imgs/zlogoyellow.png" /></a>
+<a href="imgs/logoline2.png" data-lightbox="portfoliopics" data-title="Z Logo Exploration"><img data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="port" src="imgs/logoline2.png" /></a>
+        </div>
+    <script src="lightbox2-master/lightbox2-master/src/js/lightbox.js"></script>
+    </body>
+</html>

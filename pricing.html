@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Zijun (Stephen) Yan       Student Number: A01031604-->
+    <head>
+        <title>Pricing</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        window.addEventListener('scroll', function() {
+    if(window.scrollY > 895) {
+        $("#pricingdesc").css("position", "static");
+        $("#pricingtitle").css("position", "static");
+    }
+            if(window.scrollY < 895) {
+        $("#pricingdesc").css("position", "fixed");
+        $("#pricingtitle").css("position", "fixed");
+    }
+});
+        </script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            function start() {
+                AOS.init();
+                $( "#popupcont" ).hide();
+                window.scrollTo(0, 823.2)
+            }
+            function priceyes() {
+                document.getElementById("popupdesc").innerHTML = "Press the button to contact me!"
+                $( "#popupbutton" ).hide();
+                $( "#popupbutton1" ).hide();
+                $( "#spacer" ).hide();
+                $( "#popupcont" ).show();
+            }
+            function priceno() {
+                $( "#popup1" ).fadeOut(500);
+            }
+        </script>
+    </head>
+    <body onload="start()">
+        <div id="image">
+            <a class="nav_links" href="./index.html"><img id="zeferuslogo" src="imgs/zlogo2.png" /></a>
+        </div>
+        <div class="pics">
+            
+        </div>
+        <div id="container">
+            <div id="nav">
+                <a class="home" href="./index.html">Home</a>
+                <br />
+                <a class="about" href="./about.html">About</a>
+                <br />
+                <a class="portfolio" href="./portfolio.html">Portfolio</a>
+                <br />
+                <a class="pricingin" href="./pricing.html">Pricing</a>
+                <br />
+                <a class="contact" href="./contact.html">Contact</a>
+                <br />
+                <a class="resources" href="./resources.html">Resources</a>
+                <br />
+                <a class="sitemap" href="./sitemap.html">Sitemap</a>
+            </div>
+                <div id="menu"></div>
+                    <div id="leftbar"></div>
+                        <div id="rightbar"></div>
+            <h1 id="pricingtitle">PRICING</h1>
+            <div id="popup1"  data-aos="fade-right"
+     data-aos-anchor="#note"
+     data-aos-anchor-placement="top-center">
+            <h1 class="pop1">See something you like?</h1>
+                
+            <span id="popupdesc"></span><br>
+            <button onclick="priceyes()" class="ye" id="popupbutton1">Yes</button><span id="spacer">  </span><button onclick="priceno()" class="buton" id="popupbutton">No</button><a href="./contact.html?scroll=contactform"><button onclick="priceno()" class="ye" id="popupcont">Visit Contact</button></a>
+            </div>
+            <p id="pricingdesc">To purchase a <b>design</b>, simply visit the 'Contact' page on my website. On this page you will see the pricing of the variety types of works I do.</p>
+            <h2 id="individual">DESIGN PACKAGES</h2>
+            <h3 id="onetime">(ONE TIME PAYMENT)</h3>
+            <br />
+            <br />
+            <table>
+  <tr>
+    <th>Features</th>
+    <th class="basic">Classic</th> 
+    <th class="standard">Standard</th>
+    <th class="premium">Premium</th>
+    <th class="pro">Pro</th>
+  </tr>
+  <tr>
+    <td>Custom Logo</td>
+    <td class="yes">Yes<br><span>1 Custom Logo</span><br><span>1 Revision</span></td>
+    <td class="yes">Yes<br><span>1 Custom Logo</span><br><span>2 Revisions Total</span></td>
+    <td class="yes">Yes<br><span>2 Custom Logos</span><br><span>2 Revisions Total</span></td>
+    <td class="yes">Yes<br><span>2 Custom Logos</span><br><span>2 Revisions Total</span></td>
+  </tr>
+  <tr>
+    <td>YouTube Banners</td>
+    <td class="yes">Yes<br><span>1 YouTube Banner</span><br><span>1 Revision</span></td>
+    <td class="yes">Yes<br><span>1 YouTube Banner</span><br><span>2 Revisions Total</span></td>
+    <td class="yes">Yes<br><span>2 YouTube Banners</span><br><span>2 Revisions Total</span></td>
+    <td class="yes">Yes<br><span>2 YouTube Banners</span><br><span>2 Revisions Total</span></td>
+  </tr>
+  <tr>
+    <td>Social Media Avatar</td>
+      <td class="yes">Yes<br><span>1 Social Media Avatar</span><br><span>1 Revision</span></td>
+      <td class="yes">Yes<br><span>1 Social Media Avatar</span><br><span>1 Revision</span></td>
+      <td class="yes">Yes<br><span>1 Social Media Avatar</span><br><span>2 Revisions Total</span></td>
+      <td class="yes">Yes<br><span>2 Social Media Avatars</span><br><span>2 Revisions Total</span></td>
+  </tr>
+  <tr>
+    <td>YouTube Thumbnails</td>
+    <td class="no">Not Included</td>
+    <td class="yes">Yes<br><span>1 YouTube Thumbnail</span><br><span>1 Revision</span></td>
+    <td class="yes">Yes<br><span>2 YouTube Thumbnails</span><br><span>1 Revision</span></td>
+    <td class="yes">Yes<br><span>2 YouTube Thumbnails</span><br><span>2 Revisions Total</span></td>
+  </tr>
+  <tr>
+    <td>Video/Stream Overlays</td>
+    <td class="no">Not Included</td>
+    <td class="yes">Yes<br><span>1 Video/Stream Overlay</span><br><span>1 Revision</span></td>
+    <td class="yes">Yes<br><span>1 Video/Stream Overlay</span><br><span>2 Revisions Total</span></td>
+    <td class="yes">Yes<br><span>2 Video/Stream Overlay</span><br><span>2 Revisions Total</span></td>
+  </tr>
+    <tr>
+    <td>Advertisement Banners</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="yes">Yes<br><span>1 Advertisement Banner</span><br><span>2 Revisions Total</span></td>
+    <td class="yes">Yes<br><span>2 Advertisement Banners</span><br><span>2 Revisions Total</span></td>
+  </tr>
+    <tr>
+    <td>Twitter Headers</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="yes">Yes<br><span>1 Twitter Header</span><br><span>1 Revision</span></td>
+    <td class="yes">Yes<br><span>1 Twitter Header</span><br><span>2 Revisions Total</span></td>
+  </tr>
+    <tr>
+    <td>Personal YouTube Thumbnail Template</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="yes">Yes<br><span>1 Personal YouTube Thumbnail Template</span><br><span>2 Revisions Total</span><span><br>(Source file included)</span></td>
+  </tr>
+    <tr>
+    <td>Desktop Wallpaper</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="yes">Yes<br><span>1 Desktop Wallpaper</span><br><span>1 Revision</span></td>
+  </tr>
+    <tr>
+    <td>Phone Wallpaper</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="yes">Yes<br><span>1 Phone Wallpaper</span><br><span>1 Revision</span></td>
+  </tr>
+    <tr>
+    <td>Photo Optimization</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="no">Not Included</td>
+    <td class="yes">Yes<br><span>1 Photo Edit/Optimization</span><br><span>2 Revisions Total</span></td>
+  </tr>
+  <tr>
+    <td>Extra Benefits</td>
+    <td class="no">-</td>
+    <td class="yellow">1 Additional Revision<br>for Included Designs</td>
+    <td class="yellow">1 Additional Revision<br>for Included Designs</td>
+    <td class="yellow">1 Additional Revision<br>for Included Designs</td>
+  </tr>
+  <tr>
+    <td>Extra Benefits</td>
+    <td class="no">-</td>
+    <td class="no">-</td>
+    <td class="yellow">Source file included for 1 YouTube Thumbnail</td>
+    <td class="yellow">Source file included for 1 YouTube Thumbnail</td>
+  </tr>
+  <tr>
+    <td>Extra Benefits</td>
+    <td class="no">-</td>
+    <td class="no">-</td>
+    <td class="no">-</td>
+    <td class="yellow">Source file included for 1 YouTube Banner</td>
+  </tr>
+    <tr>
+    <td>Cost</td>
+    <td class="basic">CAD$39.99</td>
+    <td class="standard">CAD$50.00</td>
+    <td class="premium">CAD$78.84</td>
+    <td class="pro">CAD$98.37</td>
+  </tr>
+</table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+    <h2 id="individual">INDIVIDUAL DESIGNS</h2>
+            <h3 id="onetime">(ONE TIME PAYMENT)</h3>
+            <p id="note">*Extra Benefits are not included in individual designs.</p>
+            <br />
+            <br />
+<table>
+  <tr>
+    <th>Type of Design</th>
+    <th>Price Range<br>(for 1)</th> 
+    <th># of Revisions</th>
+  </tr>
+  <tr>
+    <td>Custom Logos</td>
+    <td>$10 - $15</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Advertisement Banners</td>
+    <td>$15 - $20</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Video/Twitch Overlays</td>
+    <td>$10 - $15</td>
+    <td>2</td>
+  </tr>
+    <tr>
+    <td>YouTube Banners</td>
+    <td>$5 - $10</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Twitter Headers</td>
+    <td>$10 - $15</td>
+    <td>1</td>
+  </tr>
+</table>
+        </div>
+        <br />
+        <br />
+    </body>
+</html>
